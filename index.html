@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src ="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <div class="welcome">
+        <p>Welcome</p>
+    </div>
+    <div class="name-container">
+        <form method="post">
+            <div class="input-wrapper">
+                <input type="text" maxlength="20" class="name-input" name="player1" placeholder="Player 1">
+                <br>
+                <div class="line-h"></div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" maxlength="20" class="name-input" name="player2" placeholder="Player 2">
+                <br>
+                <div class="line-h"></div>
+            </div>
+            <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 150 150" fill="none">
+                    <circle cx="75" cy="75" r="75" fill="#1E1E1E"/>
+                    <path d="M37.5 71C35.2909 71 33.5 72.7909 33.5 75C33.5 77.2091 35.2909 79 37.5 79V71ZM115.328 77.8284C116.891 76.2663 116.891 73.7337 115.328 72.1716L89.8726 46.7157C88.3105 45.1536 85.7778 45.1536 84.2157 46.7157C82.6536 48.2778 82.6536 50.8105 84.2157 52.3726L106.843 75L84.2157 97.6274C82.6536 99.1895 82.6536 101.722 84.2157 103.284C85.7778 104.846 88.3105 104.846 89.8726 103.284L115.328 77.8284ZM37.5 79H112.5V71H37.5V79Z" fill="#D9D9D9"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <div class="play-container">
+        <div class="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
+                <circle cx="35" cy="35" r="35" fill="#D9D9D9"/>
+                <path d="M20 20H50" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+                <path d="M15 35H55" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+                <path d="M20 50H50" stroke="#1E1E1E" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="player-card">
+            <h1>Player 1</h1>
+            <p>Games</p>
+            <div class="results">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="winper-container">
+                <p>Win Percentage</p>
+                <div class="per">0%</div>
+            </div>
+            <div class="streak-container">
+                <p>Highest Streak</p>
+                <div class="streak">0</div>
+            </div>
+        </div>
+        <div class="gameboard-container">
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+            <div class="gameboard-box">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" fill="none">
+                    <path d="M8 8L128.208 128.208" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                    <path d="M8 128.208L128.208 8.00001" stroke="#1E1E1E" stroke-width="15" stroke-linecap="round"/>
+                </svg>
+                <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" fill="none">
+                    <circle cx="85" cy="85" r="77.5" stroke="#1E1E1E" stroke-width="15"/>
+                </svg>
+            </div>
+        </div>
+        <div class="player-card">
+            <h1>Player 2</h1>
+            <p>Games</p>
+            <div class="results">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="winper-container">
+                <p>Win Percentage</p>
+                <div class="per">0%</div>
+            </div>
+            <div class="streak-container">
+                <p>Highest Streak</p>
+                <div class="streak">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="wincard">
+    </div>
+    <div class="menu">
+        <div class="reset-board">Reset Board</div>
+        <div class="line-h"></div>
+        <div class="new-session">New Session</div>
+        <div class="line-h"></div>
+        <div class="resume">Resume</div>
+    </div>
+</body>
+</html>
