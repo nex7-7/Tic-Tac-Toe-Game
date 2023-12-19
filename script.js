@@ -287,14 +287,12 @@ function updatePlayerCard(){
             playcard[1].querySelectorAll(".results div")[i].style.backgroundColor = "#00000000";
         }
     }
-    if(gamefacts.matches > 0){
-        let wonXPer = (gamefacts.wonX*100/gamefacts.matches).toFixed(0);
-        let wonOPer = (gamefacts.wonO*100/gamefacts.matches).toFixed(0);
-        playcard[0].querySelector(".per").innerHTML = `${wonXPer}%`;
-        playcard[1].querySelector(".per").innerHTML = `${wonOPer}%`;
-        playcard[0].querySelector(".streak").innerHTML = gamefacts.maxStreakX;
-        playcard[1].querySelector(".streak").innerHTML = gamefacts.maxStreakO;
-    }
+    let wonXPer = (gamefacts.wonX*100/gamefacts.matches).toFixed(0);
+    let wonOPer = (gamefacts.wonO*100/gamefacts.matches).toFixed(0);
+    playcard[0].querySelector(".per").innerHTML = `${wonXPer}%`;
+    playcard[1].querySelector(".per").innerHTML = `${wonOPer}%`;
+    playcard[0].querySelector(".streak").innerHTML = gamefacts.maxStreakX;
+    playcard[1].querySelector(".streak").innerHTML = gamefacts.maxStreakO;
 }
 
 function viewPlay(){
